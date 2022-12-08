@@ -1,13 +1,13 @@
 import entrada from 'readline-sync';
 console.log("\nAplicação de juros\n")
 
+var divida = entrada.question("\nInforme o valor da divida sem juros: ");
+
 if (divida > 0) {
 
-    var divida = entrada.question("\nInforme o valor da divida sem juros: ");
-
+    var dias_em_atraso = entrada.question("Informe quantos dias em atraso: ");
     if (dias_em_atraso > 0) {
 
-        var dias_em_atraso = entrada.question("Informe quantos dias em atraso: ");
         var juros = 0;
         var valor_final = (divida / 100) * juros + Number(divida);
 
